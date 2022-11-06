@@ -1,5 +1,6 @@
-
-/*Global set*/
+/*=============================
+         Global set
+==============================*/
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
     margin:0; padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1.6; font-family: "Lato", 'sans-serif'}
@@ -19,8 +20,8 @@ input,select{vertical-align:middle}
 /*********************************/
 body,html {	background-color: #FFF;}
 a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent; text-decoration:none, cursor: pointer}
-h1{font-size: 60px; color: #333}
-h2{font-size: 40px; color: #333}
+h1{font-size: 60px; color: #333; line-height: 2; }
+h2{font-size: 40px; color: #333; line-height: 2;}
 h3{font-size: 18px; color: #333}
 h4{font-size: 16px; color: #333}
 h2, h1 {
@@ -56,10 +57,15 @@ a {text-decoration: none;
     color: #6D878C;
     cursor: pointer;
 }
-/*** tools ***/
+/*=============================
+           TOOLS
+==============================*/
 .wt  { color: #fff}
 .bl {color: #000;}
-
+.left {text-align: left; }
+.right {text-align: right; }
+.center {text-align: center; margin: 0 auto;}
+.justify {text-align: justify;}
 /*** button ***/
 button {
     padding: 1%;
@@ -73,51 +79,17 @@ button:hover {background: rgb(137 148 151 / 50%)}
 button a {color: #fff}
 button a:hover {color: #333}
 
-.github {
-    padding: 2%;
-    border: none;
-    border-radius : 5px;
-    color: #c2ab92!important;
-    transition: all 1s ease-out;
-    content: ;
-}
-/*** bullet ***/
-.bullet1 {
-    background-color: #AEC6CF;
-    position: absolute;
-    top: 200px;
-    right: 5%;
-    padding: 1%;
-    border-radius: 5%;
-}
-.bullet2 {
-    background-color: #AEC6CF;
-    position: absolute;
-    top: 350px;
-    right: 5%;
-    padding: 1%;
-    border-radius: 5%;
-}
-.bullet1:hover, .bullet2:hover {
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    background: wheat;
-}
-
-/******* tools ********/
 .box-shad {
     box-shadow: 3px 2px 10px 3px rgba(119, 119, 119, 0.7);
     -moz-box-shadow: 3px 2px 10px 3px rgba(119, 119, 119, 0.7);
     -webkit-box-shadow: 3px 2px 10px 3px rgba(119, 119, 119, 0.7);
 }
-
 .lettrine {
     font-size: 4em;
     line-height: 0.9em;
     float: left;
-    padding: 0 10px 10px 0;
-    
+    padding: 0 10px 10px 0;  
   }
-
   .flash {
     text-align: center;
     background-color: #6d878c;
@@ -125,21 +97,18 @@ button a:hover {color: #333}
                 rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     color: #fff;
 }
-
 .flash h2 {
     color: #fff;
 }
-
-/************ end tools **************/
-
-/*header*/
+/*=============================
+            HEADER
+==============================*/
 header {
     background: url("img/boss-lady.jpg");
     padding: 0;
     min-width: 100vh;
     margin: auto;
 }
-
 .hero {
     display: flex;
     flex-direction: column;
@@ -160,7 +129,7 @@ header {
 }
 .name a {
     color: #fff; 
-margin: auto;
+    margin: auto;
     text-decoration: none;
 }
 .slogan {
@@ -189,7 +158,32 @@ margin: auto;
 h2.tel {
     color: #fff;
 }
-/***************/
+/*** github links ***/
+
+.fa-brands h3 {
+    padding-left: 2.2em;
+    color: #ccc;
+}
+.fa-brands:hover {
+    color: #fff;
+}
+
+.pop_1 {
+    position: absolute;
+    top: 300px;
+    right: 40px;
+}
+.pop_2 {
+    position: absolute;
+    top: 350px;
+    right: 40px;
+}
+.pop_1:hover, .pop_2:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+/*=============================
+            LOGO
+==============================*/
 .logo_pictelle {
     display: block;
     width: 60px;
@@ -203,7 +197,9 @@ body > section {
     padding: 30px 20px;
 }
 
-/*** nav ***/
+/*=============================
+              NAV
+==============================*/
 nav {
     display: flex;
     width: 100%;
@@ -215,7 +211,6 @@ nav {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-  
 nav a {
     text-align: center;
     color: #000!important;
@@ -223,7 +218,6 @@ nav a {
     font-size: 17px;
     pointer-events: cursor;
 }
-
 nav a:hover {
     background-color: #6d878c;
     border-color: #9e7f02;
@@ -234,14 +228,43 @@ nav a:hover {
 nav ul li a:hover {
 	background: #FFF;
 }
-
-/******** end nav ********/
-
+/*=============================
+         CONTAINERS
+==============================*/
 .main {
     padding: 3%;
 }
+.container {
+    width: 80%;
+    margin: auto;
+}
+/********row/col********/
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 1% 0;
+    gap: 20px;
+    color: #000;
+    margin-bottom: 6em;
+}
+.wrap {flex-wrap: wrap;}
+.col {
+    display: flex;
+    flex-direction: column; 
+    padding:  15px;
+}
 
-/*********** info ***********/
+ ul.col {
+    background: #f0ece0;
+    padding: 4% 4% 6% 4%;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+.duo {flex-basis: 50%;}
+.tiers {flex-basis: 33,3333%;}
+/*=============================
+         PAGE INFO
+==============================*/
  .info {
     width: 80%;
     margin: auto;
@@ -251,32 +274,9 @@ nav ul li a:hover {
 .logo_laplateforme {
     width: 300px;   
 }
-/********** competences ************/
-.row {
-    color: #000;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-bottom: 10%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, 
-                rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-}
-  .column {
-    flex: 33,3333%;
-  }
- ul.column {
-    background: #f0ece0;
-    padding: 4% 4% 6% 4%;
-    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-}
-
-    /*** projets ***/
-.project-box {
-    width: 80%;
-    margin: auto;
-
-}
-    /*** articles ***/
+/*=============================
+         PROJETS
+==============================*/
 article {
     border-bottom: 2px dotted #999;
     padding-bottom: 20px;
@@ -290,42 +290,30 @@ article p {
     text-align: justify;;
     color: lightslategray;
 }
-    /*** autres ***/
-.autres {
-    background-color: #c2ab92;
-    display: flex;
-    flex-direction: row;
-}
-
-.set {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 10%;
-}
-
+/*=============================
+        PROJETS DIVI
+==============================*/
 .cards {
     flex: 50%;
     max-width:50%;
     margin: 0 auto;
 }
-
 .cards h2 {
     color: #000;
 }
-
 .portfolio {
     text-align: center;
 }
 h2.portfolio {
     color: #000!important;
-    padding-bottom: 5%;
+    line-height: 2;
 }
-/*** mockups ***/
+h3.portfolio {line-height: 3;}
+/*=============================
+           MOCKUPS
+==============================*/
 .mockups {
     width: 80%;
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     justify-items:center;
     margin: auto;
@@ -341,8 +329,9 @@ h2.portfolio {
     flex: 20%;
     padding-right: 1%;
 } 
-    /*experiences*/
-.prof { 
+/*=============================
+         EXPERIENCES
+==============================*/.prof { 
     display: flex;
 }
 .exp {
@@ -359,55 +348,43 @@ h2.portfolio {
     margin: 5%;
     background: #e4edea;
 }
-
 .exp h2 {
     color: #000;
 }
-
-/********* footer **********/
+/*=============================
+            FOOTER
+==============================*/
 footer {
 	background: #AEC6CF;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 4%;
+    padding-bottom: 1%;
 	margin: 0 auto;
 	clear: both;
 	text-align: right;
 }
-
-.bottom_coord {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    
-}
-
-.bottom_contact, .bottom_logo, .bottom_visit {
-    flex: 33,3333%;
-    justify-content: space-evenly;
-    margin:auto;
-
-}
+.bottom_contact {flex-basis: 40%;}
+.bottom_visit {flex-basis: 30%; padding-top: 60px;}
+.bottom_logo {flex-basis: 30%;}
 
 .bottom_logo img {
     display: block;
-    width: 100%;
-    clear:both;
-    padding: 15%;
-
+    width: 90px;
+    padding-top: 46px;
 }
-
 .bottom_contact h2 {
     font-weight:400;
 }
+.bottom_contact a, .bottom_contact p {
+    color: #fff;
+    font-weight: 700;
+
+}
 .bottom_visit a {
+    font-weight: 700;
+    color: #fff;
     font-size: 20px;
     font-weight: 600; 
 }
-
 .bottom_visit img {
 margin: auto;
 }
