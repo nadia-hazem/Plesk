@@ -178,7 +178,12 @@ h2.tel {
     top: 350px;
     right: 40px;
 }
-.pop_1:hover, .pop_2:hover {
+.pop_3 {
+    position: absolute;
+    top: 400px;
+    right: 40px;
+}
+.pop_1:hover, .pop_2:hover, .pop_3:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 /*=============================
@@ -186,7 +191,7 @@ h2.tel {
 ==============================*/
 .logo_pictelle {
     display: block;
-    width: 60px;
+    max-width: 60px;
     margin: auto;
     padding: 4% 0 4% 0;
 }
