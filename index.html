@@ -4,7 +4,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport">
-    <title>cv-nadia-hazem-html-css</title>
+    <title>cv-nadia-hazem</title>
     <link rel="stylesheet" href="cv-nadia-hazem.css">
     <script src="https://kit.fontawesome.com/12c357b92c.js" crossorigin="anonymous"></script>
 
@@ -14,7 +14,15 @@
 <body> <!-- start body -->
     
     <header> <!-- start header -->
+
         <section class="hero">
+                <div class="pop_1">
+                    <a href="https://github.com/nadia-hazem" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-2xl fa-github"><h3>Mon GitHub</h3></i></a>
+                </div>
+                <div class="pop_2">
+                    <a href="https://github.com/nadia-hazem/Plesk.git" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-2xl fa-github"><h3>Mon repo Plesk</h3></i></a>
+                </div>
+
             <div class="name">
                 <h1 class="name">Nadia Hazem</h1>
                 <h2 class="slogan">Web Designer - Dévelopeuse junior</h2>
@@ -23,7 +31,6 @@
             </div>
             <div class="coordonees">
                 <h2 class="tel">06 76 18 13 39</h2>
-                </br>
                 <hr>
                 <div class="coord">
                     <a class="mail" href="mailto:nadia.hazem@laplateforme.io"><h3><strong>nadia.hazem@laplateforme.io</strong></h3> 
@@ -36,18 +43,13 @@
     </header> <!-- end header -->
 
     <main> <!-- start main -->
-        <div class="links"></div>
-            <div class="bullet1">
-                <a href="https://github.com/nadia-hazem" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><h3>Mon GitHub</h3></a>
-            </div>
-            <div class="bullet2">
-                <a href="https://github.com/nadia-hazem/Plesk.git" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><h3>Mon repo Plesk</h3></a>
-            </div>
-        </div>
+        
 		<nav> <!-- start nav -->
             <a class="bl" href="#info">INFO</a>
             <a class="bl" href="#competences">COMPETENCES</a>
-            <a class="bl" href="#projets">PROJETS</a>
+            <a class="bl" href="#projets_code">PROJETS CODE</a>
+            <a class="bl" href="#projets_divi">PROJETS DIVI</a>
+
             <a class="bl" href="#experiences">EXPERIENCES</a>
 			<a class="bl" href="#divers">AUTRES COMPÉTENCES</a>
             <a class="bl" href="#contact">CONTACT</a> 
@@ -59,6 +61,7 @@
                 <h1 class="wt">Recherche alternance</h1>
 			</article>
         </section> <!-- end intro -->
+
         <section class="info" id="info"> <!-- start info -->
             <article>
             <p><span class="lettrine">W</span>ebdesigner, intégratrice, développeuse freelance basée à Marseille. Actuellement en formation Coding School. précédée
@@ -78,7 +81,7 @@
         
         <section id="competences">
             <div  class="row">
-                <ul class="column">
+                <ul class="col">
                     <h2 class="wt"><strong>Je me forme en</strong></h2>
                     <li>html</li>
                     <li>css</li>
@@ -87,7 +90,7 @@
                     <li>Python</li>
                     <li>Shell</li>
                 </ul>             
-                <ul class="column">
+                <ul class="col">
                     <h2 class="wt"><strong>J'utilise</strong></h2>
                     <li>Divi</li>
                     <li>Illustrator</li>
@@ -97,7 +100,7 @@
                     <li>Windows/Linux</li>
                     </li>
                 </ul>
-                <ul class="column">
+                <ul class="col">
                     <h2 class="wt"><strong>Je connais</strong></h2>
                     <li>Word</li>
                     <li>Excel</li>
@@ -108,32 +111,41 @@
             </div>
         
         </section>
-        <section id="projets">
-            <div class="project-box">
-                <h2 class="portfolio n">PROJETS ACTUELS</h2>
-                <ul>
-                    <li><button><a href="https://nadia-hazem.students-laplateforme.io/site-la-plateforme/accueil.html" target="_blank" rel="noopener noreferrer">Le site LA PLATEFORME</a></button>
-                    </li>
-                </ul>
-            </div>
+
+        <section id="projets_code">
+            <div class="container">
+                <h2 class="portfolio n">PROJETS CODE</h2>
+                <div class="row">
+                    <div class="col">
+                        <h3>Le site LA PLATEFORME</h3>
+                        <a href="https://nadia-hazem.students-laplateforme.io/site-la-plateforme/accueil.html" target="_blank"          rel="noopener noreferrer"><img src="https://nadia-hazem.students-laplateforme.io/site-la-plateforme/screenshot.jpg" width="200px"></a>
+                    </div>
+                    <div class="col">
+                        <h3>Le site FANSITE</h3>
+                        <a href="https://nadia-hazem.students-laplateforme.io/fansite/index.html" target="_blank" rel="noopener noreferrer"><img src="https://nadia-hazem.students-laplateforme.io/fansite/screenshot.jpg" width="200px"></a>
+                    </div> <!-- end col-->
+                </div> <!-- end row -->
+            </div> <!-- end container -->
         </section>
-        <section id="autres_projets">  
-            <div class="folio">
-                <h2 class="portfolio n">AUTRES PROJETS</h2>
-                <ul class="mockups">
+
+        <section id="projets_divi">  
+            <div class="container">
+                <h2 class="portfolio n">PROJETS DIVI</h2>
+                <ul class="row mockups">
                     <li><img src="img/mock-0.jpg" alt=""></li>
                     <li><img src="img/mock-actions.jpg" alt=""></li>
                     <li><img src="img/mock-lagoulette-3.jpg" alt=""></li>
                     <li><img src="img/mock-rostang-0.jpg" alt=""></li>  
                 </ul>
-                <ul class="mockups">
+                <ul class="row mockups">
                     <li><img src="img/mock-rostang-4.jpg" alt=""></li>
                     <li><img src="img/mock-nissart-2.jpg" alt=""></li>
-                    <li><img src="img/logo-catisfaction-4.png" width="150px" height="150px" alt=""></li>
+                    <li><img src="img/logo_rostang.jpg" width="150px" height="150px" alt=""></li>
                     <li><img src="img/logo-catisfaction-1.jpg" alt=""></li>
                 </ul>
-            </div>
+            </div> <!-- end container -->
         </section>
+
         <section id="experiences"> <!-- start experience -->        
             <div class="exp">
                 <h2>Expériences</h2>
@@ -177,40 +189,41 @@
         </section> <!-- end experience -->
 
         <section id="divers">
-            <div class="set">
-                <div class="cards">
-                    <h2>COMPÉTENCES</h2>
-                    <p>MODALITÉS D’ACCUEIL - RÉCEPTION - STANDARD RELATION CLIENTÈLE/FOURNISSEURS DOCUMENTATION DE VEILLE
-                        ÉTUDE CHIFFRE D’AFFAIRE
-                        FICHIER PERSONNEL - FICHIER CLIENTÈLE SUIVIS DE DOSSIER - PLANNINGS FACTURATION - FICHES DE PAIE COMMANDES - STOCKS - INVENTAIRES RÉDACTION PUBLICITAIRE
-                        PROCÉDURES DE SÉCURITÉ SUR SITE
-                        TECHNIQUES DE COMMUNICATION</p>
-                </div>
-                <div class="cards">
-                    <h2>AUTRES COMPÉTENCES</h2>
-                    <p>PHOTOGRAPHIE, GRAPHISME, WEB DESIGN, SITES, IDENTITÉ WEB, RÉDACTION CONTENUS TEXTUELS RÉALISATION ENSEIGNES COMMERCIALES, CRÉATION IDENTITÉ D’ENTREPRISE,
-                        CREATION DOCUMENTS IDENTITE D’ENTREPRISE</p>
-                </div>
-            </div>
-        </section>
+            <div class="container">
+                <div class="row">
+                    <div class="col duo justify">
+                        <h2>COMPÉTENCES</h2>
+                        <p>MODALITÉS D’ACCUEIL, RÉCEPTION, STANDARD, RELATION CLIENTÈLE/FOURNISSEURS, DOCUMENTATION DE VEILLE,
+                            ÉTUDE CHIFFRE D’AFFAIRE, FICHIER PERSONNEL, FICHIER CLIENTÈLE, SUIVIS DE DOSSIER, PLANNINGS FACTURATION, FICHES DE PAIE COMMANDES, STOCKS, INVENTAIRES, RÉDACTION PUBLICITAIRE, PROCÉDURES DE SÉCURITÉ SUR SITE, TECHNIQUES DE COMMUNICATION</p>
+                    </div>
+                    <div class="col duo justify">
+                        <h2>AUTRES COMPÉTENCES</h2>
+                        <p>PHOTOGRAPHIE, GRAPHISME, WEB DESIGN, SITES, IDENTITÉ WEB, RÉDACTION CONTENUS TEXTUELS, RÉALISATION ENSEIGNES COMMERCIALES, CRÉATION IDENTITÉ D’ENTREPRISE, CREATION DOCUMENTS, IDENTITE D’ENTREPRISE</p>
+                    </div> <!-- end col -->
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section> <!-- end section divers -->
 
     </main> <!-- end main -->
         
     <footer> <!-- start footer -->
         <section id="contact"> <!-- start section contact-->
-            <ul class="bottom_coord"> <!-- bloc coord -->
-                <li class="bottom_contact"> <!-- start bottom_contact-->
-                    <h2 class="contact">Contactez-moi !</h2>
-                    <p>Par téléphone : 06 76 18 13 39</p>
-                    <p>Par mail : <a href="mailto:nadia.hazem@laplateforme.io">nadia.hazem@laplateforme.io</a></p>
-                </li>
-                <li class="bottom_logo"><a href="https://pictelle.com"><img src="img/logo-transparent.png" width="90px" height="auto"></a>
-                </li>
-                <li class="bottom_visit"> <!-- start bottom_visit -->
-                <h3>Visitez mon portfolio</h3>
-                <a href="https://pictelle.com" alt="pictelle.com">pictelle.com</a>
-                </li>                
-            </ul>
+                <div class="row"> 
+                    <div class="col bottom_contact">
+                        <h2 class="contact">Contactez-moi !</h2>
+                        <p>Par téléphone : 06 76 18 13 39</p>
+                        <p>Par mail : <a href="mailto:nadia.hazem@laplateforme.io">nadia.hazem@laplateforme.io</a></p>
+                    </div>
+                    <div class="col bottom_visit"> <!-- start bottom_visit -->
+                    <h3>Visitez mon portfolio</h3>
+                    <a href="https://pictelle.com" alt="pictelle.com">pictelle.com</a>
+                    </div> 
+                    <div class="bottom_logo"><a href="https://pictelle.com"><img src="img/logow-big.png" width="90px" height="auto"></a>
+                    </div>
+             
+                </ul>
+
+            </div>    
             
         </section>  <!-- end contact -->
 
